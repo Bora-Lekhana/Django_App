@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'event_app/style.css' %}">
+</head>
+<body>
+    <div id="header">
+        <img src="{% static 'event_app/images/mainlog.jpg' %}" alt="logo" >
+        <ul id="nav">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'home' %}#about">About</a></li>
+            <li><a href="{% url 'events' %}">Events</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'register' %}">Register</a></li>
+        </ul>
+    </div>
+    <h2 class="head">Register</h2>
+    <div id="register">
+        <img src="{% static 'event_app/images/event.jpg' %}" alt="event" height="600px" width="600px">
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+               <li class="{{ message.tags }}">{{ message }}</li>
+             {% endfor %}
+        </ul>
+    {% endif %}
+        <form method="post" action="{% url 'register' %}">
+            {% csrf_token %}
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="abc1@gmail.com" required>
+            <br><br>
+            <label for="phone">Phone-No:</label>
+            <input type="tel" id="phone" name="phonenumber" placeholder="1234567890">
+            <br><br>
+            <label for="address">Address:</label><br>
+            <textarea name="address" id="address" rows="4" cols="20" placeholder="Enter Address"></textarea>
+            <br><br>
+            <label for="eventname">Event Name:</label>
+            <input type="text" id="eventname" name="eventname" placeholder="Enter Event Name" required>
+            <br><br>
+            <label for="date">Event Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+            <button type="submit">Register</button>
+        </form>
+   <br><br><br>
+    <div id="footer">
+        <div class="one">
+            <h4>Sai Radha Krishna Events</h4>
+            <br>
+            <p>
+                We believe that it's all about the
+                "BIG DREAMS" and the small details that make "Special Memories"!
+            </p>
+        </div>
+        <div class="one">
+            <h4>Useful Links</h4>
+            <br>
+            <ul>
+                <li><a href="{% url 'home' %}#about">About</a></li>
+                <li><a href="{% url 'events' %}" target="_blank">Events</a></li>
+                <li><a href="{% url 'register' %}" target="_blank">Register</a></li>
+            </ul>
+        </div>
+        <div class="one">
+            <h4>Get in touch</h4>
+            <br>
+            <ul>
+                <li>+91 9398348251</li>
+                <li>lekhanaradhe01@gmail.com</li>
+            </ul>
+        </div>
+        <div class="one">
+            <h4>Location</h4>
+            <br>
+            <p>
+                Maddilapalem, Visakhapatnam, Andhra Pradesh.<br>
+                Pin:530013.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

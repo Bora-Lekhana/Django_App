@@ -1,0 +1,156 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="{% static 'event_app/style.css' %}">
+</head>
+<body>
+  <div id="header">
+    <img src="{% static 'event_app/images/mainlog.jpg' %}" alt="logo">
+    <ul id="nav">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'home' %}#about">About</a></li>
+        <li><a href="{% url 'events' %}">Events</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+    </ul>
+   </div>
+        <h2 class="head" style="color: #ce8424; text-align: center;">Events</h2>
+        <br><br><br>
+      <h2 style="text-align: center; color: #ce8424;">Special Moments</h2>
+    <div class="special">
+ 
+    <div class="event1">
+        <img src="{% static 'event_app/images/img5.jpg' %}" alt="birthday" class="event_img" >
+        <br><br>
+        <p style="color: #ce8424;"><strong>Birthday Celebrations</strong></p>
+        <br>
+        <p>Brings more joy on the day you born!</p>  
+    </div>
+
+     <div class="event1">
+        <img src="{% static 'event_app/images/img9.jpg' %}" alt="business" class="event_img">
+        <br><br>
+        <p style="color: #ce8424;"><strong>Business Party</strong></p>
+        <br>
+        <p>Celebrates the moments of Achievement for better growth!</p>   
+    </div>
+
+    <div class="event1">
+        <img src="{% static 'event_app/images/img11.jpg' %}" alt="college" class="event_img">
+        <br><br>
+        <p style="color: #ce8424;"><strong>College Fest</strong></p>
+        <br>
+        <p>Start the journey of life with memorable moments!</p>      
+    </div>
+
+  </div>
+  
+  <h2 style="text-align: center; color: #ce8424;">Wedding Vibes</h2>
+   <div class="special">
+     <div class="event1">
+        <img src="{% static 'event_app/images/img4.jpg' %}" alt="haldi" class="event_img">
+        <br><br>
+        <p style="color: #ce8424;"><strong>Haldi</strong></p>
+        <br>
+        <p>Bond between bride and groom should be strong and healthy as Haldi!</p>  
+    </div>
+
+    <div class="event1">
+        <img src="{% static 'event_app/images/img3.jpg' %}" alt="wedding" class="event_img">
+        <br><br>
+        <p style="color: #ce8424;"><strong>Wedding</strong></p>
+        <br>
+        <p>You have chosen your soulmate and that will be the best decision of your life!</p>    
+    </div>
+
+    <div class="event1">
+        <img src="{% static 'event_app/images/img6.jpg' %}" alt="reception" class="event_img">
+        <br><br>
+        <p style="color: #ce8424;"><strong>Reception</strong></p>
+        <br>
+        <p>Hearty wishes from your loved ones, dearest friends and family. Be happy together!</p> 
+    </div>
+    </div>
+    <h2 style="text-align: center; color: #ce8424;">New Beginning</h2>
+  <div class="special">
+    <div class="event1">
+        <img src="{% static 'event_app/images/aniv.jpg' %}" alt="anniversary" class="event_img">
+        <br><br>
+        <p style="color: #ce8424;"><strong>Anniversary</strong></p>
+        <br>
+        <p>Your bond should grow stronger as years pass on!</p>
+    </div>
+
+     <div class="event1">
+        <img src="{% static 'event_app/images/bride.jpg' %}" alt="bride" class="event_img">
+        <br><br>
+        <p style="color: #ce8424;"><strong>Bride/Groom To Be</strong></p>
+        <br>
+        <p>End the bachelor life and start the new Beggining with your soulmate!</p>
+    </div>
+
+    <div class="event1">
+        <img src="{% static 'event_app/images/bab.jpg' %}" alt="Baby" class="event_img">
+        <br><br>
+        <p style="color: #ce8424;"><strong>Baby Shower</strong></p>
+        <br>
+        <p>A lovely moment in your life. Result of your happy life and togetherness!</p>
+        
+    </div>
+  </div>
+
+    <h2 style="text-align: center; color: #ce8424;">Food and Beverage</h2>
+<div class="special">
+    <div class="event1">
+        <img src="{% static 'event_app/images/img17.jpg' %}" alt="catering" class="event_img">
+        <br><br>
+        <p style="color: #ce8424;"><strong>Catering</strong></p>
+        <br>
+        <p>Make the moment more special with the food you loved. Taste filled with happiness!</p>
+        
+    </div>
+    </div>
+    
+  <br><br><br>
+    <div id="footer">
+        <div class="one">
+            <h4>Sai Radha Krishna Events</h4>
+            <br>
+            <p>
+                We believe that it's all about the
+                "BIG DREAMS" and the small details that make "Special Memories"!
+            </p>
+        </div>
+        <div class="one">
+            <h4>Useful Links</h4>
+            <br>
+            <ul>
+                <li><a href="{% url 'home' %}#about">About</a></li>
+                <li><a href="{% url 'events' %}" target="_blank">Events</a></li>
+                <li><a href="{% url 'register' %}" target="_blank">Register</a></li>
+            </ul>
+        </div>
+        <div class="one">
+            <h4>Get in touch</h4>
+            <br>
+            <ul>
+                <li>+91 9398348251</li>
+                <li>lekhanaradhe01@gmail.com</li>
+            </ul>
+        </div>
+        <div class="one">
+            <h4>Location</h4>
+            <br>
+            <p>
+                Maddilapalem, Visakhapatnam, Andhra Pradesh.<br>
+                Pin:530013.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

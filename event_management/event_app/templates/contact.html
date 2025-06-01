@@ -1,0 +1,79 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'event_app/style.css' %}">
+</head>
+<body>
+  <div id="header">
+    <img src="{% static 'event_app/images/mainlog.jpg' %}" alt="logo" >
+    <ul id="nav">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'home' %}#about">About</a></li>
+        <li><a href="{% url 'events' %}">Events</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+    </ul>
+   </div>
+      
+    <h2 class="head">Contact</h2>
+    
+    <div  id="contact" > 
+    <video class="event-video"  src="{% static 'event_app/videos/video.mp4' %}" controls muted loop poster="{% static 'event_app/images/end.jpg' %}" ></video>
+    <p>
+<strong>Contact Us </strong>
+<br><br>
+Thank you so much for reaching out to us - we are excited to connect with you!
+<br><br> Tell us about you.
+If you do not receive response within 24 hours, please contact us directly email or phone.
+<br><br>
+<strong>Phone :</strong> +91 9398348251
+<br><br>
+<strong>E-Mail :</strong> lekhanaradhe01@gmail.com
+<br><br>
+<strong>Address :</strong> Maddilapalem, Visakhapatnam, Andhra Pradesh
+          Pin:530013
+    </p>
+    </div>
+ <br><br><br>
+    <div id="footer">
+        <div class="one">
+            <h4>Sai Radha Krishna Events</h4>
+            <br>
+            <p>
+                We believe that it's all about the
+                "BIG DREAMS" and the small details that make "Special Memories"!
+            </p>
+        </div>
+        <div class="one">
+            <h4>Useful Links</h4>
+            <br>
+            <ul>
+                <li><a href="{% url 'home' %}#about">About</a></li>
+                <li><a href="{% url 'events' %}" target="_blank">Events</a></li>
+                <li><a href="{% url 'register' %}" target="_blank">Register</a></li>
+            </ul>
+        </div>
+        <div class="one">
+            <h4>Get in touch</h4>
+            <br>
+            <ul>
+                <li>+91 9398348251</li>
+                <li>lekhanaradhe01@gmail.com</li>
+            </ul>
+        </div>
+        <div class="one">
+            <h4>Location</h4>
+            <br>
+            <p>
+                Maddilapalem, Visakhapatnam, Andhra Pradesh.<br>
+                Pin:530013.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'event_app/style.css' %}">
+</head>
+<body>
+    <div id="log">
+    <img src="{% static 'event_app/images/mainlog.jpg' %}" alt="logo" height="450px" width="450px">
+    <h2 style="color:#ce8424;">Login Page</h2>
+    <div id="login">
+ <form action="{% url 'login' %}" method="post">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <br>
+    <input type="text" name="username" id="username" placeholder="Enter Full Name" required>
+    <br><br>
+    <label for="password">Password:</label>
+    <br>
+    <input type="password" name="password" id="password" placeholder="Enter Password" required>
+    <br><br><br>
+    <button type="submit">Login</button>
+ </form>
+    <br>
+   <p style="color:white;">Don't have an account?</p>
+    <br>
+    <a href="{% url 'register' %}">Register here</a>
+    </div>
+    </div>
+</body>
+</html>
