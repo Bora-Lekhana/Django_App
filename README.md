@@ -1,3 +1,5 @@
+![Event_Manaement](Event.jpg)
+
 **🎉 Event Management System**
 
 A Django-based web application for creating, managing, and attending events. Designed for organizers and participants to streamline event planning, registration, and communication.
@@ -48,4 +50,4 @@ event_management/
 ├── manage.py                # Django CLI
 └── README.md
 
-![Event_Manaement](Event.jpg)
+
