@@ -5,6 +5,7 @@
 A Django-based web application for creating, managing, and attending events. Designed for organizers and participants to streamline event planning, registration, and communication.
 
 **🚀 Features**
+
 User authentication (Sign up, login, logout)
 
 Event creation and editing (for organizers)
@@ -20,6 +21,7 @@ Email notifications for registration confirmations
 Responsive design for all devices
 
 **🛠 Tech Stack**
+
 Backend: Django (Python)
 
 Frontend: HTML, CSS, JavaScript, Bootstrap
@@ -29,6 +31,7 @@ Database: SQLite (default), with support for PostgreSQL
 Authentication: Django's built-in authentication system
 
 📦 Project Structure 
+
      This structure reflects a modular and scalable Django application design, separating configuration, core app logic, static resources, and templates for maintainability and clarity.
     
 event_management/
