@@ -30,8 +30,7 @@ Database: SQLite (default), with support for PostgreSQL
 
 Authentication: Django's built-in authentication system
 
-📁 Project Structure 
-
+📁 Project Structure :
      This structure reflects a modular and scalable Django application design, separating configuration, core app logic, static resources, and templates for maintainability and clarity.
     
 event_management/
